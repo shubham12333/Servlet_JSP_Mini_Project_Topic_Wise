@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Create and Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <h2>Create an Account</h2>
+      </div>
+      <form id="create-form" class="form" action="userdburl" method="post">
+        <input type="text" id="create-username" placeholder="Username" name="Username" required>
+        <input type="text" id="create-password" placeholder="Password" name="Password" required>
+        <button type="submit">Create Account</button>
+      </form>
+      <div class="form-footer">
+        <p>Already have an account? <a href="login-form" id="show-login">Log in</a></p>
+      </div>
+    </div>
+    <div class="form-container hidden">
+      <div class="form-header">
+        <h2>Login</h2>
+      </div>
+      <form id="login-form" class="form">
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="text" id="login-password" placeholder="Password" name="Password" required>
+        <button type="submit">Log in</button>
+      </form>
+      <div class="form-footer">
+        <p>Don't have an account? <a href="#" id="show-create">Create one</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+	  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('pieces-blue-stationery.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-header h2 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-footer {
+  margin-top: 20px;
+}
+
+.form-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+  </style>
+  <script>
+	  document.addEventListener('DOMContentLoaded', () => {
+  const createForm = document.getElementById('create-form');
+  const loginForm = document.getElementById('login-form');
+  const showLoginLink = document.getElementById('show-login');
+  const showCreateLink = document.getElementById('show-create');
+
+  showLoginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    createForm.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+  });
+
+  showCreateLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.classList.add('hidden');
+    createForm.classList.remove('hidden');
+  });
+});
+
+  </script>
+	  
+</body>
+</html>

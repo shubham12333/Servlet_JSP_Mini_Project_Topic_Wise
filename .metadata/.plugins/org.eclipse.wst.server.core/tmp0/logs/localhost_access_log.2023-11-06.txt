@@ -1,0 +1,12 @@
+127.0.0.1 - - [06/Nov/2023:18:36:05 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:36:07 +0530] "GET /Voter_Url_Servlet/ HTTP/1.1" 200 735
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:36:08 +0530] "GET /Voter_Url_Servlet/js/validation.js HTTP/1.1" 200 1322
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:36:20 +0530] "POST /Voter_Url_Servlet/voterurl HTTP/1.1" 200 119
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:36:24 +0530] "GET /Voter_Url_Servlet/input.html HTTP/1.1" 200 735
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:36:31 +0530] "POST /Voter_Url_Servlet/voterurl HTTP/1.1" 200 121
+127.0.0.1 - - [06/Nov/2023:18:38:34 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:38:36 +0530] "GET /HttpSessionWithCookies/ HTTP/1.1" 200 852
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:38:46 +0530] "POST /HttpSessionWithCookies/firsturl HTTP/1.1" 200 534
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:39:36 +0530] "POST /HttpSessionWithCookies/secondurl HTTP/1.1" 200 493
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:41:17 +0530] "POST /HttpSessionWithCookies/firsturl HTTP/1.1" 200 512
+0:0:0:0:0:0:0:1 - - [06/Nov/2023:18:41:31 +0530] "POST /HttpSessionWithCookies/secondurl HTTP/1.1" 200 484

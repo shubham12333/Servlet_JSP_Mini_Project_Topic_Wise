@@ -1,0 +1,13 @@
+127.0.0.1 - - [20/Sep/2023:12:59:27 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:12:59:29 +0530] "GET /Customer_Registration/ HTTP/1.1" 200 1426
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:12:59:30 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:12:59:43 +0530] "GET /Customer_Registration/actionurl?name=shubham+parmar&email=shubhamparmar3300%40gmail.com&mobile_number=9907829926&addrss=ward+no.+9%2Cgandhi+chok%2C+village+badagaon&gender=M&qlfy=MBBS%2FMD HTTP/1.1" 200 111
+127.0.0.1 - - [20/Sep/2023:13:00:07 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:00:07 +0530] "GET /HttpSessionWithCookies/ HTTP/1.1" 200 852
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:00:15 +0530] "POST /HttpSessionWithCookies/firsturl HTTP/1.1" 200 512
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:00:24 +0530] "POST /HttpSessionWithCookies/secondurl HTTP/1.1" 200 484
+127.0.0.1 - - [20/Sep/2023:13:05:20 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:05:21 +0530] "GET /DynaFormApp/ HTTP/1.1" 200 893
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:05:28 +0530] "POST /DynaFormApp/firsturl HTTP/1.1" 200 419
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:05:33 +0530] "POST /DynaFormApp/secondurl HTTP/1.1" 200 219
+0:0:0:0:0:0:0:1 - - [20/Sep/2023:13:05:39 +0530] "GET /DynaFormApp/input.html HTTP/1.1" 200 893

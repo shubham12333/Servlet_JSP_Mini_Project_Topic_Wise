@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metro Ticket Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      width: 400px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="pngwing.com.png" alt="Train Logo" width="100">
+    </div>
+    <h1>Metro Ticket Booking</h1>
+    <form id="ticketForm" action="userdetails" method="post">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      
+      <label for="destination">Destination</label>
+      <input type="text" id="destination" name="destination" required>
+      
+      <input type="submit" value="Book Ticket" id="button">
+    </form>
+  </div>
+  
+  <script>
+    const ticketForm = document.getElementById("ticketForm");
+    const fullNameInput = document.getElementById("fullName");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+    const destinationInput = document.getElementById("destination");
+
+    
+
+    function validateInputs() {
+      let isValid = true;
+
+      if (fullNameInput.value.trim() === "") {
+        isValid = false;
+        alert("Please enter your full name.");
+      }
+
+      if (emailInput.value.trim() === "") {
+        isValid = false;
+        alert("Please enter your email.");
+      } else if (!isValidEmail(emailInput.value)) {
+        isValid = false;
+        alert("Please enter a valid email address.");
+      }
+
+      if (phoneInput.value.trim() === "") {
+        isValid = false;
+        alert("Please enter your phone number.");
+      } else if (!isValidPhone(phoneInput.value)) {
+        isValid = false;
+        alert("Please enter a valid 10-digit phone number.");
+      }
+
+      if (destinationInput.value.trim() === "") {
+        isValid = false;
+        alert("Please enter your destination.");
+      }
+
+      return isValid;
+    }
+
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    function isValidPhone(phone) {
+      const phoneRegex = /^\d{10}$/;
+      return phoneRegex.test(phone);
+    }
+  </script>
+</body>
+</html>

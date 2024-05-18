@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s both;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Employee Details Form</h2>
+  <form action="process.jsp" method="post">
+    <label for="empNumber">Employee Number:</label>
+    <input type="text" id="empNumber" name="empNumber"><br><br>
+
+    <label for="empName">Employee Name:</label>
+    <input type="text" id="empName" name="empName"><br><br>
+
+    <label for="empAddress">Employee Address:</label>
+    <input type="text" id="empAddress" name="empAddress"><br><br>
+
+    <label for="empSalary">Employee Salary:</label>
+    <input type="text" id="empSalary" name="empSalary"><br><br>
+
+    <button type="submit">Generate pay details</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>

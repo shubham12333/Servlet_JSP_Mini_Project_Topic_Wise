@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1 style="color: red;text-align: center;">Html to Servlet Communication</h1>
+		<script lang="JavaScript" src="js/validation.js"></script>
+		
+		<form action="voterurl" method="post" onsubmit="return validate(this)">
+			person name :: <input type="text" name="pname"><span id="pnameErr"></span><br>
+			person age :: <input type="text" name="page"><span id="pageErr"></span><br>
+			person address :: <input type="text" name="paddrs"><span id="paddrsErr"></span><br>
+			
+			<input type="hidden" name="vstatus" value="disabled">
+			<input type="submit" value="Checking Vote Eligiblity">
+		</form>
+</body>
+</html>

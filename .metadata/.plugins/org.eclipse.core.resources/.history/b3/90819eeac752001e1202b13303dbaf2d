@@ -1,0 +1,36 @@
+package com.sp.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.sp.service.BankService;
+
+
+public class AppTest 
+{
+	private static BankService bankservice;
+	
+	@BeforeAll
+	public static void setUp()
+	{
+		System.out.println("AppTest.setUp()");
+		bankservice = new BankService();
+	}
+	
+	@BeforeEach
+	public static void BeforeTest()
+	{
+		System.out.println("AppTest.BeforeTest()");
+	}
+	
+	@Test
+	public void testClacInterestWithBigValues()
+	{
+		double excepted = 12000.0f;
+		double actual = bankservice.calcInterestAmount(120000,10,1);
+		assertEquals(excepted,actual);
+	}
+}

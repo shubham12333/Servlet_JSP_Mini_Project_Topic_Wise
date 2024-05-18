@@ -1,0 +1,54 @@
+
+
+<form action="search.jsp" method="post">
+	
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .search-container {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            border: 2px solid #ccc;
+            background-color: #f1f1f1;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .search-icon {
+            background-image: url('file:///F:/NTAJ415/JspApp13-SendRedirect/src/main/webapp/search.png');
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Enter Song Name..." name="ss"><br>
+        <button type="submit" class="search-button">
+            <span class="search-icon"></span>
+        </button>
+    </div>
+</body>
+
+</html>
+
+</form>

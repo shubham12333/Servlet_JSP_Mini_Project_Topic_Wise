@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1 style="color: red;text-align: center;">Html to Servlet Communication using all types of form comps</h1>
+		<form action="formurl" method="get">
+			<table align="center" bgcolor="cyan">
+				<tr>
+					<td> name :: </td>
+					<td><input type="text" name="name"> </td>
+				</tr>
+				<tr>
+					<td> age :: </td>
+					<td><input type="password" name="age"> </td>
+				</tr>
+				<tr>
+					<td> Address :: </td>
+					<td><textarea name="paddrs" rows="4" cols="10" ></textarea> </td>
+				</tr>
+				<tr>
+					<td> Gender :: </td>
+					<td><input type="radio" name="gender" value="M">Male &nbsp;&nbsp;&nbsp;
+						<input type="radio" name="gender" value="F">Female &nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				  <tr>
+					<td> Hobbies :: </td>
+					<td><input type="checkbox" name="hb" value="Books">Reading Books &nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="hb" value="TV">TV Watching &nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="hb" value="stamps">Stamp Collection &nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="hb" value="games">Playing games &nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>Marrital Status :: </td>
+					<td><input type="checkbox" name="ms" value="married">Married &nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>Qualification :: </td>
+					<td><select name="qlfy">
+						<option name="" selected>--Select a Values--</option>
+						<option name="Engg">B.E./B.Tech</option>
+						<option name="Arts">B.A./M.A.</option>
+						<option name="medicine">MBBS/MD</option>
+						<option name="commerce">B.com/M.com</option>
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td>Favorite Places :: </td>
+					<td><select name="favPlaces" multiple="multiple">
+						<option name="delhi">Delhi</option>
+						<option name="Goa">Goa</option>
+						<option name="Mumbai">Mumbai</option>
+						<option name="munnar">Munnar hills</option>
+						<option name="chennai">Chennai</option>
+					   </select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Telephone Number</td>
+					<td><input type="tel" name="mobileno"></td>
+				</tr>
+				
+				<tr>
+					<td>FavColor : </td>
+					<td><input type="color" name="faColor">></td>
+				</tr>
+				
+				<tr>
+					<td>DOB(DATE OF BIRTH) : </td>
+					<td><input type="date"  name="dob"></td>
+				</tr>
+				
+				<tr>
+					<td>Time of Birth (tob) :: </td>
+					<td><input type="datetime-local"  name="tob" ></td>
+				</tr>
+				
+				<tr>
+					<td>Fav Number :: </td>
+					<td><input type="number" name="fname" min="0" max="9"></td>
+				</tr>
+				
+				<tr>
+					<td>Email id :: </td>
+					<td><input type="email" name="mailid"></td>
+				</tr>
+				<tr>
+					<td>Independence Day week </td>
+					<td><input type="week" name="freedomWeek" ></td>
+				</tr>
+				
+				<tr>
+					<td> Insta URL :: </td>
+					<td><input type="url" name="InstUrl"> </td>
+				</tr>
+				
+				<tr>
+					<td>Favourite Search String : </td>
+					<td><input type="search" name="ss" ></td>
+				</tr>
+				
+				<tr>
+					<td>Income range :: </td>
+					<td><input type="range" name="income" min="10000" max="1000000" title="10000 to 100000"></td>
+				</tr>
+				
+				<tr>
+					<td><input type="submit" value="register"></td>
+					<td><input type="reset" value="cancel"></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+127.0.0.1 - - [28/Aug/2023:17:49:20 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:49:28 +0530] "GET /Metro_Ticket_Booking/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:49:28 +0530] "GET /Metro_Ticket_Booking/styles.css HTTP/1.1" 404 787
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:49:28 +0530] "GET /Metro_Ticket_Booking/script.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:49:28 +0530] "GET /Metro_Ticket_Booking/pieces-blue-stationery.jpg HTTP/1.1" 200 26661596
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:49:40 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:50:25 +0530] "POST /Metro_Ticket_Booking/userdburl HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:50:26 +0530] "GET /Metro_Ticket_Booking/userdburl HTTP/1.1" 200 -

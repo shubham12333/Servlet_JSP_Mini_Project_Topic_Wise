@@ -1,0 +1,59 @@
+
+<script language ="JavaScript">
+	function isHtml()
+	{
+		frm.source.value = "html";
+		validate();
+	}
+	
+	function isExcel()
+	{
+		frm.source.value="excel";
+		validate();
+	}
+	
+	function isExcel()
+	{
+		frm.source.value="excel";
+		validate();
+	}
+	
+	function validate()
+	{
+		if(frm.desg.selectedIndex==0)
+		{
+			alert(" u must select the desg");
+			return false;
+		}
+		else
+		{
+			frm.submit();
+			return true;	
+		}
+	}
+</script>
+
+<h1 style="color:red;text-align: center;">Searching the employee details</h1>
+
+<form action="controller" method="post" target="f2" name="frm">
+	<table border="0" align="center" bgcolor="cyan">
+		<tr>
+			<td> Select Employee Desg ::</td>
+			<td><select name="desg">
+				<option value="" selected>--select a value</option>
+				<option value="CLERK">CLERKS</option>
+				<option value="MANAGER">MANAGERS</option>
+				<option value="SALESMAN">SALESMAN</option>
+				<option value="PRESIDENT">PRESIDENTS</option>
+				<option value="ANALYST">ANALYSTS</option>
+			</select></td>
+			
+		</tr>
+		<tr>
+			<td><input type="button" value="HmtlOutput" onclick="isHtml()"></td>
+			<td><input type="button" value="ExcelOutput" onclick="isExcel()"></td>
+		</tr>
+		
+	</table>
+	<input type="hidden" name="source"/>
+</form>

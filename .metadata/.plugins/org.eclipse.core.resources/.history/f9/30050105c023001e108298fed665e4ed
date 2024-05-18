@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1 style="color: red;text-align: center;">Htmml to Servlet Communication Using JavaScript</h1>
+		
+		<form action="capitalurl" method="POST" name="frm">
+			select country name ::<select name="country" onchange="sendRequest()">
+				<option value="" selected>--Select--</option>
+				<option value="0">India</option>
+				<option value="1">Pakistan</option>
+				<option value="2">China</option>
+				<option value="3">USa</option>
+				<option value="4">UK</option>
+				<option value="5">France</option>
+				
+			</select>
+		</form>
+</body>
+</html>
